@@ -8,8 +8,9 @@ class AbstractViewCase(object):
     templates = []
     _defaultLinks = [
         '/',
-        '/entrar',
-        '/inscrever'
+        '/entrar/',
+        '/static/',
+        '/inscrever/'
     ]
 
     longMessage = False
