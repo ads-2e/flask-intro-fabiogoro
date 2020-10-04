@@ -29,7 +29,7 @@ class AbstractViewCase(object):
             os.path.join(
                 os.path.dirname(__file__),
                 'templates/'+self._template)
-            ).read()
+            , encoding='utf-8').read()
         self.client = app.test_client()
         self.response = self.client.get(self._url)
         self.conteudo = self.response.data.decode('UTF-8')
