@@ -6,3 +6,9 @@ def index():
     return render_template(
         'index.html',
     )
+
+@app.route('/entrar/')
+def entrar():
+    return render_template(
+        'entrar.html',
+    )
