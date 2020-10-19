@@ -12,3 +12,9 @@ def entrar():
     return render_template(
         'entrar.html',
     )
+
+@app.route('/inscrever/')
+def inscrever():
+    return render_template(
+        'inscrever.html',
+    )

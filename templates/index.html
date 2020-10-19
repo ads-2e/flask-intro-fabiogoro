@@ -1,191 +1,145 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-        <link rel="stylesheet" href="/static/css/site.css">
-        <link rel="stylesheet" href="/static/css/index.css">
-        <link rel="stylesheet" href="/static/css/forms.css">
-        <title>Placar de campeonato - Home</title>
-    </head>
-    <body>
-        <header id="topo">
-            <nav>
-                <ul class="navegacao">
-                    <li class="item-menu">
-                        <a href="/" class="logo">
-                            Placar
-                        </a>
-                    </li>
-                    <li class="item-menu grupo-botao">
-                        <a class="botao botao-sucesso-vazado" href="/inscrever/">Inscreva-se</a>
-                        <a class="botao botao-principal-vazado" href="/entrar/">Entrar</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-          
-        <main>
-            <h1>Placar de campeonato</h1>
-            <aside class="vestibular">
-                <h2>Acompanhe em tempo real todos os jogos do campeonato</h2>
-                <p>
-                    Inscreva-se e receba sempre as últimas atualizações do campeonato
-                </p>
-                <p class="inscrever">
-                    <a class="botao botao-principal" href="/inscrever/">Inscreva-se Já!</a>
-                </p>
-            </aside>
-        </main>
-        <section class="premios">
-        <h2>Últimos jogos</h2>
-        
-          <article class="premio">
-            <h4>Los Angeles Valiant</h4>
-            <h3>3</h3> 
-            <p>x</p> 
-            <h3>2</h3>  
-            <h4>Atlanta Reign</h4>
-            <hr>
-            <span>2020-05-02</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Atlanta Reign</h4>
-            <h3>1</h3> 
-            <p>x</p> 
-            <h3>5</h3>  
-            <h4>Los Angeles Valiant</h4>
-            <hr>
-            <span>2020-05-03</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Los Angeles Valiant</h4>
-            <h3>0</h3> 
-            <p>x</p> 
-            <h3>2</h3>  
-            <h4>Boston Uprising</h4>
-            <hr>
-            <span>2020-05-04</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Boston Uprising</h4>
-            <h3>1</h3> 
-            <p>x</p> 
-            <h3>4</h3>  
-            <h4>Los Angeles Valiant</h4>
-            <hr>
-            <span>2020-05-05</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Los Angeles Valiant</h4>
-            <h3>10</h3> 
-            <p>x</p> 
-            <h3>3</h3>  
-            <h4>Houston Outlaws</h4>
-            <hr>
-            <span>2020-05-06</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Houston Outlaws</h4>
-            <h3>2</h3> 
-            <p>x</p> 
-            <h3>8</h3>  
-            <h4>Los Angeles Valiant</h4>
-            <hr>
-            <span>2020-05-07</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Atlanta Reign</h4>
-            <h3>1</h3> 
-            <p>x</p> 
-            <h3>0</h3>  
-            <h4>Boston Uprising</h4>
-            <hr>
-            <span>2020-05-08</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Boston Uprising</h4>
-            <h3>4</h3> 
-            <p>x</p> 
-            <h3>2</h3>  
-            <h4>Atlanta Reign</h4>
-            <hr>
-            <span>2020-05-09</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Atlanta Reign</h4>
-            <h3>2</h3> 
-            <p>x</p> 
-            <h3>1</h3>  
-            <h4>Houston Outlaws</h4>
-            <hr>
-            <span>2020-05-10</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Houston Outlaws</h4>
-            <h3>1</h3> 
-            <p>x</p> 
-            <h3>2</h3>  
-            <h4>Atlanta Reign</h4>
-            <hr>
-            <span>2020-05-11</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Boston Uprising</h4>
-            <h3>8</h3> 
-            <p>x</p> 
-            <h3>5</h3>  
-            <h4>Houston Outlaws</h4>
-            <hr>
-            <span>2020-05-12</span>
-          </article>
-        
-          <article class="premio">
-            <h4>Houston Outlaws</h4>
-            <h3>3</h3> 
-            <p>x</p> 
-            <h3>1</h3>  
-            <h4>Boston Uprising</h4>
-            <hr>
-            <span>2020-05-13</span>
-          </article>
-        
+{% extends "base.html" %}
 
-        </section>
-        
-        </main>
-        <footer>
-            <ul class="navegacao social-media-lista">
-                <li>
-                    <a class="media-link facebook" href="https://www.facebook.com/" target="blank">Facebook</a>
-                </li>
-                <li>
-                    <a class="media-link instagram" href="https://www.instagram.com/" target="blank">Instagram</a>
-                </li>
-                
-                <li>
-                    <a class="media-link linkedin" href="https://www.linkedin.com/" target="blank">Linkedin</a>
-                </li>
-                <li>
-                    <a class="media-link twitter" href="https://twitter.com/" target="blank">Twitter</a>
-                </li>
-                <li>
-                    <a class="media-link youtube" href="https://www.youtube.com/" target="blank">Youtube</a>
-                </li>
-            </ul>
-            <a href="#topo">Topo</a>
-        </footer>
-    
-</body>
-</html>
+{% block principal %}
+<main>
+  
+  <main>
+      <h1>Placar de campeonato</h1>
+      <aside class="vestibular">
+          <h2>Acompanhe em tempo real todos os jogos do campeonato</h2>
+          <p>
+              Inscreva-se e receba sempre as últimas atualizações do campeonato
+          </p>
+          <p class="inscrever">
+              <a class="botao botao-principal" href="/inscrever/">Inscreva-se Já!</a>
+          </p>
+      </aside>
+  </main>
+  <section class="premios">
+  <h2>Últimos jogos</h2>
+
+    <article class="premio">
+      <h4>Los Angeles Valiant</h4>
+      <h3>3</h3> 
+      <p>x</p> 
+      <h3>2</h3>  
+      <h4>Atlanta Reign</h4>
+      <hr>
+      <span>2020-05-02</span>
+    </article>
+
+    <article class="premio">
+      <h4>Atlanta Reign</h4>
+      <h3>1</h3> 
+      <p>x</p> 
+      <h3>5</h3>  
+      <h4>Los Angeles Valiant</h4>
+      <hr>
+      <span>2020-05-03</span>
+    </article>
+
+    <article class="premio">
+      <h4>Los Angeles Valiant</h4>
+      <h3>0</h3> 
+      <p>x</p> 
+      <h3>2</h3>  
+      <h4>Boston Uprising</h4>
+      <hr>
+      <span>2020-05-04</span>
+    </article>
+
+    <article class="premio">
+      <h4>Boston Uprising</h4>
+      <h3>1</h3> 
+      <p>x</p> 
+      <h3>4</h3>  
+      <h4>Los Angeles Valiant</h4>
+      <hr>
+      <span>2020-05-05</span>
+    </article>
+
+    <article class="premio">
+      <h4>Los Angeles Valiant</h4>
+      <h3>10</h3> 
+      <p>x</p> 
+      <h3>3</h3>  
+      <h4>Houston Outlaws</h4>
+      <hr>
+      <span>2020-05-06</span>
+    </article>
+
+    <article class="premio">
+      <h4>Houston Outlaws</h4>
+      <h3>2</h3> 
+      <p>x</p> 
+      <h3>8</h3>  
+      <h4>Los Angeles Valiant</h4>
+      <hr>
+      <span>2020-05-07</span>
+    </article>
+
+    <article class="premio">
+      <h4>Atlanta Reign</h4>
+      <h3>1</h3> 
+      <p>x</p> 
+      <h3>0</h3>  
+      <h4>Boston Uprising</h4>
+      <hr>
+      <span>2020-05-08</span>
+    </article>
+
+    <article class="premio">
+      <h4>Boston Uprising</h4>
+      <h3>4</h3> 
+      <p>x</p> 
+      <h3>2</h3>  
+      <h4>Atlanta Reign</h4>
+      <hr>
+      <span>2020-05-09</span>
+    </article>
+
+    <article class="premio">
+      <h4>Atlanta Reign</h4>
+      <h3>2</h3> 
+      <p>x</p> 
+      <h3>1</h3>  
+      <h4>Houston Outlaws</h4>
+      <hr>
+      <span>2020-05-10</span>
+    </article>
+
+    <article class="premio">
+      <h4>Houston Outlaws</h4>
+      <h3>1</h3> 
+      <p>x</p> 
+      <h3>2</h3>  
+      <h4>Atlanta Reign</h4>
+      <hr>
+      <span>2020-05-11</span>
+    </article>
+
+    <article class="premio">
+      <h4>Boston Uprising</h4>
+      <h3>8</h3> 
+      <p>x</p> 
+      <h3>5</h3>  
+      <h4>Houston Outlaws</h4>
+      <hr>
+      <span>2020-05-12</span>
+    </article>
+
+    <article class="premio">
+      <h4>Houston Outlaws</h4>
+      <h3>3</h3> 
+      <p>x</p> 
+      <h3>1</h3>  
+      <h4>Boston Uprising</h4>
+      <hr>
+      <span>2020-05-13</span>
+    </article>
+
+
+  </section>
+
+</main>
+{% endblock %}

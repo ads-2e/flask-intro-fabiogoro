@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" href="/static/css/site.css">
+        <link rel="stylesheet" href="/static/css/index.css">
+        <link rel="stylesheet" href="/static/css/forms.css">
+        {% block titulo %}
+            <title>Placar de campeonato - Home</title>
+        {% endblock %}
+    </head>
+    <body>
+        <header id="topo">
+            <nav>
+                <ul class="navegacao">
+                    <li class="item-menu">
+                        <a href="/" class="logo">
+                            Placar
+                        </a>
+                    </li>
+                    <li class="item-menu grupo-botao">
+                        <a class="botao botao-sucesso-vazado" href="/inscrever/">Inscreva-se</a>
+                        <a class="botao botao-principal-vazado" href="/entrar/">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Conteúdo principal da página -->
+        {% block principal %}
+
+        {% endblock %}
+
+        <footer>
+            <ul class="navegacao social-media-lista">
+                <li>
+                    <a class="media-link facebook" href="https://www.facebook.com/" target="blank">Facebook</a>
+                </li>
+                <li>
+                    <a class="media-link instagram" href="https://www.instagram.com/" target="blank">Instagram</a>
+                </li>
+                
+                <li>
+                    <a class="media-link linkedin" href="https://www.linkedin.com/" target="blank">Linkedin</a>
+                </li>
+                <li>
+                    <a class="media-link twitter" href="https://twitter.com/" target="blank">Twitter</a>
+                </li>
+                <li>
+                    <a class="media-link youtube" href="https://www.youtube.com/" target="blank">Youtube</a>
+                </li>
+            </ul>
+            <a href="#topo">Topo</a>
+        </footer>
+    
+    </body>
+</html>
